@@ -17,3 +17,8 @@
 - You can decide the names of the variables. They can be "X, Y, Z", "A, B, C", or even "El, Psy, Congroo", whatever you like!
 - The results are saved in an Excel spreadsheet.
 - Each statement comes with its valid inference ... or the logically equivalent statement derived from modus tollens reasoning and de Morgan's law. In the spreadsheet, the original statements are in the "prompt" column, and the valid inferences are in the "same" column
+## save_gii.py
+- Usually used as imported functions in other scripts (e.g., from save_gii import extract_gii)
+- extract_gii() extracts a .gii surfaced-based functional MRI image as a numpy array with the shape of (32492,1)
+- save_gii() saves a (32492,1) numpy array into a .gii image
+- There may be functions in the nibabel module that do these tasks, but I can't find them. In nibabel, there are easy read and write functions for volume-based .nii files, but it doesn't seem so for .gii files
